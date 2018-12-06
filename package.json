@@ -1,0 +1,25 @@
+{
+  "name": "coolPrettyCode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src",
+    "prettier": "prettier \"**/*.js\"",
+    "format": "npm run prettier -- --write",
+    "validate": "npm run lint && npm run format"
+  },
+  "husky":{
+    "hooks":{
+      "pre-commit": "validate"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "husky": "^1.2.0",
+    "prettier": "^1.15.3"
+  }
+}
