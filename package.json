@@ -11,7 +11,7 @@
   },
   "husky":{
     "hooks":{
-      "pre-commit": "validate"
+      "pre-commit": "npm run validate"
     }
   },
   "keywords": [],
